@@ -5,22 +5,25 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:background="@android:color/white">
+    android:background="@android:color/black">
     
     <!-- IFE图片 - 稍微靠下，放大 -->
-    <ImageView
-        android:id="@+id/ife_image"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        android:src="@drawable/ife"
-        android:contentDescription="Top image" />
-    
+
     <!-- 弹性空间 - 将按钮推到底部 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/ife_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
     <View
         android:layout_width="match_parent"
         android:layout_height="0dp"
