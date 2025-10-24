@@ -7,22 +7,45 @@
     android:gravity="center_horizontal"
     android:background="@android:color/black">
     
+    <!-- Power按钮 - 左上角，缩小 -->
+    <ImageView
+        android:id="@+id/power_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/power"
+        android:contentDescription="Power button" />
+
     <!-- IFE图片 - 稍微靠下，放大 -->
 
     <!-- 弹性空间 - 将按钮推到底部 -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp">
+        android:layout_height="400dp">
 
         <ImageView
             android:id="@+id/ife_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
             android:src="@drawable/map1" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!-- Miles图片 - 在map1和button之间 -->
+    <ImageView
+        android:id="@+id/miles_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/miles"
+        android:contentDescription="Miles image" />
 
     <View
         android:layout_width="match_parent"
